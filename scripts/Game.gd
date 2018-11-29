@@ -17,4 +17,5 @@ func _spawn_first_trunks():
 		add_child(newTrunk)
 		newTrunk.position = last_spawn_position
 		last_spawn_position.y -= newTrunk.sprite_height
+		newTrunk.initialize_trunk(false,false)
 

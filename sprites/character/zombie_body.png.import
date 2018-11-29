@@ -7,7 +7,10 @@ path="res://.import/zombie_body.png-224ec63dc5be0f3984d9db4369e81ad3.stex"
 [deps]
 
 source_file="res://sprites/character/zombie_body.png"
+source_md5="f8d9dbc2c3e821e7601546693d46da97"
+
 dest_files=[ "res://.import/zombie_body.png-224ec63dc5be0f3984d9db4369e81ad3.stex" ]
+dest_md5="0cf4f7189ada6c632018e470c727cc4f"
 
 [params]
 

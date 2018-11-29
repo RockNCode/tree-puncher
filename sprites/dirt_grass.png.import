@@ -7,7 +7,10 @@ path="res://.import/dirt_grass.png-52fe37c8d698f8582994c6e21f118d8c.stex"
 [deps]
 
 source_file="res://sprites/dirt_grass.png"
+source_md5="7b8f7d8dbdd62b466797468ce6cebdb5"
+
 dest_files=[ "res://.import/dirt_grass.png-52fe37c8d698f8582994c6e21f118d8c.stex" ]
+dest_md5="2737c10dab1a0e6ee061a22254856c77"
 
 [params]
 

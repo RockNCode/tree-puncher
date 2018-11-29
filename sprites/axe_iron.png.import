@@ -7,7 +7,10 @@ path="res://.import/axe_iron.png-2c217cdb1f61d03c9eff79d326381d66.stex"
 [deps]
 
 source_file="res://sprites/axe_iron.png"
+source_md5="e1398b766e9efe911e6a5b76e758f525"
+
 dest_files=[ "res://.import/axe_iron.png-2c217cdb1f61d03c9eff79d326381d66.stex" ]
+dest_md5="6abbe3606d1b257b5c7e94c506649e4a"
 
 [params]
 

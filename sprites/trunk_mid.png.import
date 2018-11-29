@@ -7,7 +7,10 @@ path="res://.import/trunk_mid.png-6f8d16048ef61e861c2f2a1b5ad45e5a.stex"
 [deps]
 
 source_file="res://sprites/trunk_mid.png"
+source_md5="4747e7598e73527435a5f24611db819b"
+
 dest_files=[ "res://.import/trunk_mid.png-6f8d16048ef61e861c2f2a1b5ad45e5a.stex" ]
+dest_md5="cfb5d0c7f88c08af841b807dae50109e"
 
 [params]
 

@@ -20,7 +20,7 @@ texture = ExtResource( 3 )
 [node name="Ground" type="Node2D" parent="." index="1"]
 
 editor/display_folded = true
-position = Vector2( 96, 1152 )
+position = Vector2( 100, 1150 )
 scale = Vector2( 2, 2 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -45,24 +45,8 @@ texture = ExtResource( 4 )
 
 position = Vector2( 608, 800 )
 
-[node name="Trunk" parent="." index="3" instance=ExtResource( 2 )]
+[node name="FirstTrunkPosition" type="Position2D" parent="." index="3"]
 
-position = Vector2( 352, 896 )
-
-[node name="Trunk2" parent="." index="4" instance=ExtResource( 2 )]
-
-position = Vector2( 352, 640 )
-
-[node name="Trunk3" parent="." index="5" instance=ExtResource( 2 )]
-
-position = Vector2( 352, 384 )
-
-[node name="Trunk4" parent="." index="6" instance=ExtResource( 2 )]
-
-position = Vector2( 352, 128 )
-
-[node name="Trunk5" parent="." index="7" instance=ExtResource( 2 )]
-
-position = Vector2( 352, -128 )
+position = Vector2( 360, 900 )
 
 

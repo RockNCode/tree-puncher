@@ -7,7 +7,10 @@ path="res://.import/Grave.png-77547d27853514e3cf7dda8a4845eae3.stex"
 [deps]
 
 source_file="res://sprites/Grave.png"
+source_md5="7d1bf97806aa2688173a38b71f8676e1"
+
 dest_files=[ "res://.import/Grave.png-77547d27853514e3cf7dda8a4845eae3.stex" ]
+dest_md5="63e9a44b4d7fe70b1eb851936b6e83ad"
 
 [params]
 

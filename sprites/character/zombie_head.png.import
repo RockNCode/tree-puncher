@@ -7,7 +7,10 @@ path="res://.import/zombie_head.png-b354882f30d7adefa53671b4dca8945d.stex"
 [deps]
 
 source_file="res://sprites/character/zombie_head.png"
+source_md5="c2e43eae02a5b75a901aef4e7474ad52"
+
 dest_files=[ "res://.import/zombie_head.png-b354882f30d7adefa53671b4dca8945d.stex" ]
+dest_md5="faf6b41c608c55c598a56edffcd032fc"
 
 [params]
 

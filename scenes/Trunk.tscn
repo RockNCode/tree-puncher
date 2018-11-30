@@ -9,7 +9,7 @@
 custom_solver_bias = 0.0
 radius = 46.6458
 
-[node name="Trunk" type="Node2D" index="0"]
+[node name="Trunk" type="Node2D"]
 
 scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
@@ -72,5 +72,14 @@ texture = ExtResource( 3 )
 
 shape = SubResource( 1 )
 disabled = true
+
+[node name="Timer" type="Timer" parent="." index="3"]
+
+process_mode = 1
+wait_time = 3.0
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 

@@ -5,6 +5,7 @@ export(PackedScene) var trunk_scene
 onready var firstTrunkPos = $FirstTrunkPosition
 
 var last_spawn_position
+var trunks = []
 
 func _ready():
 	last_spawn_position = firstTrunkPos.position
@@ -18,4 +19,8 @@ func _spawn_first_trunks():
 		newTrunk.position = last_spawn_position
 		last_spawn_position.y -= newTrunk.sprite_height
 		newTrunk.initialize_trunk(false,false)
-
+		trunks.append(newTrunk)
+		
+func punch_tree(from_right):
+	trunks[0].remove(from_right)
+	trunks.pop_front()

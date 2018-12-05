@@ -48,7 +48,6 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightAxe" index="1"]
 
 shape = SubResource( 1 )
-disabled = true
 
 [node name="LeftAxe" type="Area2D" parent="." index="2" groups=[
 "Axes",
@@ -74,7 +73,6 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftAxe" index="1"]
 
 shape = SubResource( 1 )
-disabled = true
 _sections_unfolded = [ "Pause" ]
 
 [node name="Timer" type="Timer" parent="." index="3"]

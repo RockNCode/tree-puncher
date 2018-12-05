@@ -13,7 +13,7 @@ var sprite_height
 func _ready():
 	sprite_height = sprite.texture.get_height() * scale.y
 	set_process(false)
-	pass
+
 	
 func _process(delta):
 	position.x += speed * direction * delta
@@ -39,4 +39,3 @@ func remove(from_right):
 
 func _on_Timer_timeout():
 	queue_free()
-	pass # replace with function body

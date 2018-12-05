@@ -1,12 +1,13 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Trunk.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sprites/skybox_sideHills.png" type="Texture" id=3]
 [ext_resource path="res://sprites/dirt_grass.png" type="Texture" id=4]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/Grave.png" type="Texture" id=6]
 
-[node name="Game" type="Node" index="0"]
+[node name="Game" type="Node"]
 
 script = ExtResource( 1 )
 trunk_scene = ExtResource( 2 )
@@ -15,11 +16,12 @@ trunk_scene = ExtResource( 2 )
 
 position = Vector2( 481.982, 697.044 )
 scale = Vector2( 2.49517, 3.10263 )
+z_index = -12
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="Ground" type="Node2D" parent="." index="1"]
 
-editor/display_folded = true
 position = Vector2( 100, 1150 )
 scale = Vector2( 2, 2 )
 _sections_unfolded = [ "Transform" ]
@@ -48,5 +50,46 @@ position = Vector2( 608, 800 )
 [node name="FirstTrunkPosition" type="Position2D" parent="." index="3"]
 
 position = Vector2( 360, 900 )
+
+[node name="Grave" type="Sprite" parent="." index="4"]
+
+visible = false
+position = Vector2( 605.055, 932.288 )
+texture = ExtResource( 6 )
+
+[node name="TimeLeft" type="ProgressBar" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 111.0
+margin_right = 598.0
+margin_bottom = 168.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+min_value = 0.0
+max_value = 5.0
+step = 1.0
+page = 0.0
+value = 5.0
+exp_edit = false
+rounded = false
+percent_visible = false
+_sections_unfolded = [ "Percent" ]
+
+[node name="Timer" type="Timer" parent="." index="6"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 

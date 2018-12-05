@@ -9,11 +9,12 @@
 custom_solver_bias = 0.0
 radius = 46.6458
 
-[node name="Trunk" type="Node2D"]
+[node name="Trunk" type="Node2D" index="0"]
 
 scale = Vector2( 2, 2 )
+z_index = -2
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
@@ -21,9 +22,10 @@ z_index = 1
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="RightAxe" type="Area2D" parent="." index="1"]
+[node name="RightAxe" type="Area2D" parent="." index="1" groups=[
+"Axes",
+]]
 
-editor/display_folded = true
 position = Vector2( 80, 0 )
 rotation = -3.14159
 scale = Vector2( 1, -1 )
@@ -34,7 +36,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 __meta__ = {
 "_edit_group_": true
 }
@@ -48,9 +50,10 @@ texture = ExtResource( 3 )
 shape = SubResource( 1 )
 disabled = true
 
-[node name="LeftAxe" type="Area2D" parent="." index="2"]
+[node name="LeftAxe" type="Area2D" parent="." index="2" groups=[
+"Axes",
+]]
 
-editor/display_folded = true
 position = Vector2( -80, 0 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -59,7 +62,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Z Index" ]
 __meta__ = {
 "_edit_group_": true
 }
@@ -72,6 +75,7 @@ texture = ExtResource( 3 )
 
 shape = SubResource( 1 )
 disabled = true
+_sections_unfolded = [ "Pause" ]
 
 [node name="Timer" type="Timer" parent="." index="3"]
 

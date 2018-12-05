@@ -9,7 +9,7 @@
 custom_solver_bias = 0.0
 radius = 46.6458
 
-[node name="Trunk" type="Node2D" index="0"]
+[node name="Trunk" type="Node2D"]
 
 scale = Vector2( 2, 2 )
 z_index = -2
